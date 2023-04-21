@@ -19,7 +19,7 @@ body {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  width: 150px;
+  width: 10rem;
   opacity: 0.5;
   transition: opacity 0.3s;
 }
@@ -49,11 +49,12 @@ h1 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  width: 200px;
+  margin: 20px; 
+  width: calc(33% - 40px);
   transition: transform 0.3s;
-  position: relative; /* Add this line */
+  position: relative;
 }
+
 
 .person::before {
   content: "";
@@ -95,4 +96,20 @@ a {
 a:hover {
   color: #ffffff;
   background-color: #e0342a;
+}
+
+
+/* Add media queries for mobile responsiveness */
+
+@media screen and (max-width: 767px) {
+  .person {
+    width: 100%; /* Make the person boxes take up 100% of the width on mobile */
+    margin: 20px 0; /* Increase margin-top and margin-bottom for better spacing */
+  }
+
+  .holberton-logo {
+    width: 2.5rem; /* Decrease the logo size on mobile */
+    right: 10px;
+    bottom: 10px;
+  }
 }
