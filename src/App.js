@@ -11,7 +11,7 @@ const people = [
   },
   {
     name: 'Trenton Sims',
-    github: 'https://github.com/trentonsims',
+    github: 'https://github.com/tsims115',
     linkedin: 'https://www.linkedin.com/in/tsims115/',
   },
   {
